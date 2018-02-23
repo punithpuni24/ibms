@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { routes } from '../app-routing.module';
+
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
+})
+export class dashboardComponent {
+  title = 'app';
+}

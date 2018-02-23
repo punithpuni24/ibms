@@ -142,7 +142,9 @@ table {
 a {
 	text-decoration: none;
 }
+.login-name-label{
 
+}
 .txt-rt {
 	text-align: right;
 }
@@ -258,14 +260,7 @@ body a {
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
-.radio-inline{
-	color: #fff;
-	padding-top: 10px;
-}
-.radio-class{
-	-webkit-justify-content: initial !important;
-    justify-content: initial !important;;
-	}
+
 .footer_grid-w3ls {
 	background: rgba(255, 255, 255, 0.05);
 	border: 2px solid rgba(255, 255, 255, 0.10);
@@ -375,12 +370,10 @@ color: #FF0000 !important;
 	outline: none;
 }
 
-/*.main-w3layouts-form .fields-w3-agileits:nth-child(1) {
-	margin-bottom: 1.3em;
-}*/
-.main-w3layouts-form .fields-w3-agileits {
+.main-w3layouts-form .fields-w3-agileits:nth-child(1) {
 	margin-bottom: 1.3em;
 }
+
 .main-w3layouts-form input[type="submit"] {
 	font-family: 'Nunito', sans-serif;
 	text-transform: uppercase;
