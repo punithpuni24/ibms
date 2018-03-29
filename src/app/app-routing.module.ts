@@ -1,10 +1,20 @@
 import {Routes} from '@angular/router';
-import { dashboardComponent }   from './dashboard/dashboard.component';
+import { NgModule } from '@angular/core';
+import { dashboardComponent } from './dashboard/dashboard.component';
 import { AppComponent } from './app.component';
-export const routes: Routes = [
-  { path: '/dashboard', component:dashboardComponent }
- 
-];
- 
+import { RouterModule } from '@angular/router';
 
-export class AppRoutingModule {}
+export const routes: Routes = [
+  { path : '', loadChildren: './login/login.module#LoginModule'},
+  { path : 'dashboard', loadChildren: './dashboard/dashboard-temp/dashboard-temp.module#DashboardTempModule'}
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+  providers: [],
+  exports: [RouterModule],
+  bootstrap: [AppComponent]
+})
+export class AppRoutingModule { }
